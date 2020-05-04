@@ -33,7 +33,7 @@ def makeResponse(req):
     city = parameters.get("geo-city")
     date = parameters.get("date")
 
-    r = requests.get('http://api.openweathermap.org/data/2.5/forecast?q=hyderabad,in&appid=db91df44baf43361cbf73026ce5156cb')
+    r = requests.get('http://api.openweathermap.org/data/2.5/forecast?q=hyderabad,in&appid=db91df44baf43361cbf73026ce5156cb'/webhook)
     json_object = r.json()
     weather = json_object['list']
     condition = weather[0]['weather'][0]['description']
