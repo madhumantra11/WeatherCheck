@@ -7,7 +7,9 @@ import urllib3
 
 app = Flask( __name__ )
 
-
+@app.route('/', methods=['GET'])
+def homepage():
+    return 'Welcome!'
 # geting and sending response to dialogflow
 @app.route( '/webhook', methods=[ 'POST' ] )
 def webhook():
