@@ -1,4 +1,4 @@
 Flask==1.1.2
-Requirements==2.18.4
+Requests==2.23.0
 urllib3
 
